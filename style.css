@@ -305,7 +305,7 @@ a {
   padding: 20px;
   border-radius: 10px;
   max-width: 400px; /* Defina a largura máxima da caixa de contato */
-  max-height: 50vh;
+  max-height: 90vh;
 }
 
 .contact-box .sociallinks {
