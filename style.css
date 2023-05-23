@@ -298,14 +298,12 @@ a {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .contact-box {
   background-color: var(--background);
   padding: 20px;
   border-radius: 10px;
-  width: 100%;
   max-width: 400px; /* Defina a largura máxima da caixa de contato */
   max-height: 50vh;
 }
