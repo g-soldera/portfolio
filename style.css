@@ -278,10 +278,11 @@ a {
     flex-direction: column;
   }
   .container .banner {
+    border-radius:0.4em;
     display: block;
     margin: auto;
     width: 94vw;
-    margin-top: -4em;
+    margin-top: -3em;
   }
 }
 
