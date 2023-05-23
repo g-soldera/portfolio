@@ -14,7 +14,7 @@ Portfolio is a customizable website template designed to showcase your work, ski
 
 ## 📷 Preview
 
-[![1684855360120](https://media.discordapp.net/attachments/1109870440945565726/1109898222190735381/header.png)]()
+[![https://gsoldera.dev](https://media.discordapp.net/attachments/1109870440945565726/1109898222190735381/header.png)]()
 
 ## 📃 Getting Started
 
