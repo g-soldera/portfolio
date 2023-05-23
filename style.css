@@ -204,9 +204,7 @@ a {
   border-radius: 1em;
 }
 
-.container .bannerdiv:hover {
-  transform: scale(1.02);
-}
+
 
 @media (min-width: 769px) {
   .container .bannerdiv {
@@ -221,6 +219,9 @@ a {
     width: 210%;
     height: auto;
   }
+.container .bannerdiv:hover {
+  transform: scale(1.02);
+}
 }
 
 @media (max-width: 768px) {
