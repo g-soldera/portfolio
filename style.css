@@ -1,6 +1,6 @@
 * {
-  font-family: "Abel", sans-serif;
-  color: #fff;
+  font-family: "Roboto", sans-serif;
+  color: #f9f9f9;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -294,18 +294,17 @@ a {
 }
 
 .contact-container {
-  height: 100vh;
+  margin-top: 3em;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .contact-box {
   background-color: var(--background);
   padding: 20px;
   border-radius: 10px;
-  width: 100%;
   max-width: 400px; /* Defina a largura máxima da caixa de contato */
+  max-height: 65vh;
 }
 
 .contact-box .sociallinks {
