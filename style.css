@@ -119,6 +119,7 @@ a {
   margin-bottom: 20px;
 }
 .container section .title {
+  font-weight: 550;
   width: 100%;
   border-top-left-radius: 0.6em;
   border-top-right-radius: 0.6em;
@@ -135,7 +136,7 @@ a {
 
 .container div {
   border-radius: 1em;
-  margin-top: 10vh;
+  margin-top: 6vh;
   margin-left: 1.15vw;
   margin-right: 1.15vw;
   width: calc((100% / 2) - 2.3vw);
@@ -150,6 +151,7 @@ a {
 }
 
 .container div .title {
+  font-weight: 550;
   margin-top: -1em;
   width: 60%;
   border-radius: 0.6em;
@@ -370,5 +372,5 @@ a {
 }
 
 ::selection {
-  background-color: var(--background-selection);
+  background-color: var(--backgroundhover);
 }
