@@ -1,6 +1,6 @@
 * {
   font-family: "Roboto", sans-serif;
-  color: #fff;
+  color: #f9f9f9;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -294,8 +294,7 @@ a {
 }
 
 .contact-container {
-  margin-top: 1em;
-  height: 100vh;
+  margin-top: 3em;
   display: flex;
   justify-content: center;
 }
@@ -305,7 +304,7 @@ a {
   padding: 20px;
   border-radius: 10px;
   max-width: 400px; /* Defina a largura máxima da caixa de contato */
-  max-height: 90vh;
+  max-height: 65vh
 }
 
 .contact-box .sociallinks {
