@@ -294,7 +294,7 @@ a {
 }
 
 .contact-container {
-  top: 1em;
+  margin-top: 1em;
   height: 100vh;
   display: flex;
   justify-content: center;
