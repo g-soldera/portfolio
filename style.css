@@ -182,6 +182,7 @@ a {
   justify-content: space-between;
   padding-bottom: 1em;
 }
+
 .container .bannerdiv {
   border-radius: 1em;
   margin-left: 1.15vw;
@@ -193,15 +194,20 @@ a {
 }
 
 .bannercontent .banner {
-  border-radius: 30px;
-  margin-top: -4em;
+  margin-top: -2.7em;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 205%;
   height: auto;
+  border-radius: 1em;
 }
+
+.container .bannerdiv:hover {
+  transform: scale(1.02);
+}
+
 @media (min-width: 769px) {
   .container .bannerdiv {
     display: flex;
@@ -212,8 +218,6 @@ a {
   }
 
   .bannercontent .banner {
-    border-radius: 30px;
-    margin-top: -4em;
     width: 210%;
     height: auto;
   }
@@ -305,7 +309,7 @@ a {
   background-color: var(--background);
   padding: 20px;
   border-radius: 10px;
-  max-width: 400px; /* Defina a largura máxima da caixa de contato */
+  width: 36vw;
 }
 
 .contact-box .sociallinks {
@@ -350,6 +354,8 @@ a {
 
 .contact-box input,
 .contact-box textarea {
+  max-width: 34vw;
+  min-width: 34vw;
   font-size: 18px;
   color: #101728;
   padding: 10px;
@@ -358,7 +364,16 @@ a {
   border-radius: 5px;
 }
 
+.contact-box textarea#message {
+  max-height: 200px;
+  min-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 .contact-box button {
+  max-width: 34vw;
+  min-width: 34vw;
   padding: 10px 20px;
   background-color: #273b69;
   color: #fff;
@@ -369,6 +384,7 @@ a {
 
 .contact-box button:hover {
   background-color: #041338;
+  transform: scale(1.025);
 }
 
 ::selection {
