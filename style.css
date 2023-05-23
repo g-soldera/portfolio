@@ -200,6 +200,22 @@ a {
   width: 205%;
   height: auto;
 }
+@media (min-width: 769px) {
+  .container .bannerdiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: calc((100% - 5vw) / 2);
+    align-items: flex-start;
+  }
+
+  .bannercontent .banner {
+    border-radius: 30px;
+    margin-top: -4em;
+    width: 210%;
+    height: auto;
+  }
+}
 
 @media (max-width: 768px) {
   nav .social-links,
