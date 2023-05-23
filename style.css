@@ -204,8 +204,6 @@ a {
   border-radius: 1em;
 }
 
-
-
 @media (min-width: 769px) {
   .container .bannerdiv {
     display: flex;
@@ -219,86 +217,9 @@ a {
     width: 210%;
     height: auto;
   }
-.container .bannerdiv:hover {
-  transform: scale(1.02);
-}
-}
-
-@media (max-width: 768px) {
-  nav .social-links,
-  nav .logo {
-    display: none;
+  .container .bannerdiv:hover {
+    transform: scale(1.02);
   }
-  nav ul {
-    justify-content: center;
-    align-items: center;
-  }
-  nav {
-    height: 4em;
-  }
-
-  .mobilelogo {
-    display: block;
-  }
-
-  .container {
-    flex-direction: column;
-  }
-
-  .container section,
-  .container div {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    width: 96vw;
-    margin-left: 2vw;
-    margin-right: 2vw;
-  }
-  .container div .article {
-    max-width: 93vw;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-  }
-  .container div .article .image {
-    width: 70vw;
-    height: 70vw;
-  }
-  .container div .article .content {
-    margin-top: 0.6em;
-    margin-bottom: 1em;
-    width: 70vw;
-    height: 50vw;
-  }
-  .container .bannerdiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .container .banner {
-    border-radius:0.4em;
-    display: block;
-    margin: auto;
-    width: 94vw;
-    margin-top: -3em;
-  }
-}
-
-.container div .article .content::-webkit-scrollbar {
-  width: 5px;
-  border-radius: 1em;
-  background-color: #f1f1f138;
-}
-
-.container div .article .content::-webkit-scrollbar-thumb {
-  background-color: #88888869;
-  border-radius: 0.3em;
-}
-
-.container div .article .content::-webkit-scrollbar-thumb:hover {
-  background-color: #b3b3b375;
 }
 
 .contact-container {
@@ -356,8 +277,8 @@ a {
 
 .contact-box input,
 .contact-box textarea {
-  max-width: 34vw;
-  min-width: 34vw;
+  max-width: 100%;
+  min-width: 100%;
   font-size: 18px;
   color: #101728;
   padding: 10px;
@@ -367,15 +288,15 @@ a {
 }
 
 .contact-box textarea#message {
-  max-height: 200px;
-  min-height: 200px;
+  max-height: 20vw;
+  min-height: 20vw;
   overflow-y: auto;
   overflow-x: hidden;
 }
 
 .contact-box button {
-  max-width: 34vw;
-  min-width: 34vw;
+  max-width: 100%;
+  min-width: 100%;
   padding: 10px 20px;
   background-color: #273b69;
   color: #fff;
@@ -387,6 +308,94 @@ a {
 .contact-box button:hover {
   background-color: #041338;
   transform: scale(1.025);
+}
+
+@media (max-width: 768px) {
+  nav .social-links,
+  nav .logo {
+    display: none;
+  }
+  nav ul {
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    height: 4em;
+  }
+
+  .mobilelogo {
+    display: block;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .container section,
+  .container div {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 96vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  .container div .article {
+    max-width: 93vw;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .container div .article .image {
+    width: 70vw;
+    height: 70vw;
+  }
+  .container div .article .content {
+    margin-top: 0.6em;
+    margin-bottom: 1em;
+    width: 70vw;
+    height: 50vw;
+  }
+  .container .bannerdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container .banner {
+    border-radius: 0.4em;
+    display: block;
+    margin: auto;
+    width: 94vw;
+    margin-top: -2.8em;
+    margin-bottom: -0.5em;
+  }
+  .contact-box {
+    width: 86vw;
+  }
+
+  .contact-box input,
+  .contact-box textarea,
+  .contact-box button {
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+
+.container div .article .content::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 1em;
+  background-color: #f1f1f138;
+}
+
+.container div .article .content::-webkit-scrollbar-thumb {
+  background-color: #88888869;
+  border-radius: 0.3em;
+}
+
+.container div .article .content::-webkit-scrollbar-thumb:hover {
+  background-color: #b3b3b375;
 }
 
 ::selection {
