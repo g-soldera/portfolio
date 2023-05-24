@@ -592,10 +592,13 @@ a {
     padding: 1em;
   }
 
-  .banner-container {
-    width: 100vw;
+  .banner-container div {
+    display: block;
     text-align: center;
-    margin: auto;
+    auto: center;
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .container .bannerdiv {
