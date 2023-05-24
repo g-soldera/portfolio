@@ -63,8 +63,8 @@ body {
   background: #101728 var(--bg-url) no-repeat top center/cover;
   position: relative;
   overflow: hidden;
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  -backdrop-webkit-filter: blur(4px);
 }
 
 .parallax::before {
