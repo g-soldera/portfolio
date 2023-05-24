@@ -1,10 +1,10 @@
 :root {
   --bg-url: url(files/assets/bg.jpg);
   --mobile-bg-url: url(files/assets/mobilebg.jpg);
-  --background-nav: rgba(255, 255, 255, 0.2);
+  --background-nav: rgba(255, 255, 255, 0.03);
   --background: rgba(255, 255, 255, 0.1);
   --background-active: rgba(255, 255, 255, 0.1);
-  --background-title: rgba(255, 255, 255, 0.35);
+  --background-title: rgba(255, 255, 255, 0.1);
   --backgroundhover: rgba(255, 255, 255, 0.2);
   --border: rgba(255, 255, 255, 0.5);
   --main-text-color: #f9f9f9;
@@ -17,6 +17,7 @@
   --scrollbarhover: rgba(255, 255, 255, 0.5);
   --select-text-color: #1f1e22;
   --text-bg-color: #f9f9f9;
+  --logocolor: 0;
 }
 
 .light {
@@ -38,6 +39,7 @@
   --scrollbarhover: rgba(0, 0, 0, 0.5);
   --select-text-color: #f9f9f9;
   --text-bg-color: #1f1e22;
+  --logocolor: 1;
 }
 
 * {
@@ -91,12 +93,23 @@ nav {
 }
 
 nav .logo {
+  animation: 0.5s ease-out 0s 1 slideInFromTop;
+  animation-fill-mode: forwards;
   margin-right: auto;
-  margin-left: 1em;
-  font-size: 2.5em;
+  margin-left: 2em;
+  margin-top: 0.6em;
+}
+
+nav .logo img {
+  width: 12em;
+  filter: invert(var(--logocolor));
+  -webkit-filter: invert(var(--logocolor));
 }
 
 nav .social-links {
+  visibility: hidden;
+  animation: 0.5s ease-out 1s 1 slideInFromTop;
+  animation-fill-mode: forwards;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,6 +139,9 @@ nav .social-links {
 }
 
 nav ul {
+  visibility: hidden;
+  animation: 0.5s ease-out 0.5s 1 slideInFromTop;
+  animation-fill-mode: forwards;
   width: 30%;
   display: flex;
   justify-content: center;
@@ -156,11 +172,18 @@ a {
 }
 
 .mobilelogo {
+  animation: 1s ease-out 0s 1 slideInFromTop;
+  animation-fill-mode: forwards;
+  visibility: hidden;
   width: 100%;
   text-align: center;
   display: none;
   padding: 1em;
   font-size: 2em;
+}
+
+.mobilelogo img {
+  width: 80vw;
 }
 
 .container {
@@ -170,11 +193,34 @@ a {
 }
 
 .container section {
+  visibility: hidden;
+  animation: 1.5s ease-out 2s 1 slideInFromBottom;
+  animation-fill-mode: forwards;
   border-radius: 1em;
   width: calc((100% / 3) - 2.3vw);
   background-color: var(--background);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border: 1px solid var(--border);
   margin: 1.5vh 1.15vw 20px;
+}
+
+.container .sect1 {
+  visibility: hidden;
+  animation: 1s ease-out 2s 1 slideInFromBottom;
+  animation-fill-mode: forwards;
+}
+
+.container .sect2 {
+  visibility: hidden;
+  animation: 1s ease-out 2.25s 1 slideInFromBottom;
+  animation-fill-mode: forwards;
+}
+
+.container .sect3 {
+  visibility: hidden;
+  animation: 1s ease-out 2.5s 1 slideInFromBottom;
+  animation-fill-mode: forwards;
 }
 
 .container section .title {
@@ -200,6 +246,20 @@ a {
 
 .container .main {
   border: 1px solid var(--border);
+  animation: 1s ease-out 1s 1 slideInFromRight;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+  opacity: 0.5;
+}
+
+.container .main:hover {
+  opacity: 1;
+}
+
+.container #main {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  visibility: hidden;
+  animation-fill-mode: forwards;
 }
 
 .container #main img {
@@ -217,12 +277,11 @@ a {
 
 .container div .title {
   margin-top: -2.2em;
-  width: 60%;
+  width: 65%;
   max-width: 70%;
   border-radius: 0.6em;
   background-color: var(--background-title);
   padding: 0.4em;
-  padding-bottom: 0.3em;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -259,6 +318,18 @@ a {
   margin: 0;
   width: 100%;
   background-color: transparent !important;
+}
+
+.container .banner-container .banner1 {
+  visibility: hidden;
+  animation: 0.7s ease-out 1.5s 1 slideInFromBottom;
+  animation-fill-mode: forwards;
+}
+
+.container .banner-container .banner2 {
+  visibility: hidden;
+  animation: 0.7s ease-out 2s 1 slideInFromBottom;
+  animation-fill-mode: forwards;
 }
 
 .container .bannerdiv {
@@ -319,18 +390,26 @@ a {
 }
 
 .contact-box {
+  visibility: hidden;
+  animation: 0.5s ease-out 1.5s 1 slideInFromBottom;
+  animation-fill-mode: forwards;
   display: block;
   margin: auto;
   margin-top: 3em;
   margin-bottom: 3em;
   border: 1px solid var(--border);
   background-color: var(--background);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   padding: 20px;
   border-radius: 10px;
   width: 36vw;
 }
 
 .contact-box .sociallinks {
+  visibility: hidden;
+  animation: 0.7s ease 2.8s 1 slideInFromLeft;
+  animation-fill-mode: forwards;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -354,23 +433,35 @@ a {
 }
 
 .contact-box h2 {
+  visibility: hidden;
+  animation: 0.7s ease 1.8s 1 slideInFromTop;
+  animation-fill-mode: forwards;
   font-weight: 580;
   text-align: center;
   margin-bottom: 20px;
 }
 
 .contact-box form {
+  visibility: hidden;
+  animation: 0.7s ease 1.9s 1 slideInFromBottom;
+  animation-fill-mode: forwards;
   display: flex;
   flex-direction: column;
 }
 
 .contact-box label {
+  visibility: hidden;
+  animation: 0.7s ease 2s 1 slideInFromBottom;
+  animation-fill-mode: forwards;
   font-weight: 550;
   margin-bottom: 5px;
 }
 
 .contact-box input,
 .contact-box textarea {
+  visibility: hidden;
+  animation: 0.7s ease 2.1s 1 slideInFromBottom;
+  animation-fill-mode: forwards;
   max-width: 100%;
   min-width: 100%;
   font-size: 18px;
@@ -390,6 +481,9 @@ a {
 }
 
 .contact-box button {
+  visibility: hidden;
+  animation: 0.7s ease 2.2s 1 slideInFromBottom;
+  animation-fill-mode: forwards;
   max-width: 100%;
   min-width: 100%;
   padding: 10px 20px;
@@ -528,4 +622,56 @@ a {
 
 .bannercontent {
   background-color: white;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+  }
 }
