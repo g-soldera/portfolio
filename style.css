@@ -593,7 +593,9 @@ a {
   }
 
   .banner-container {
+    width: 100vw;
     text-align: center;
+    margin: auto;
   }
 
   .container .bannerdiv {
