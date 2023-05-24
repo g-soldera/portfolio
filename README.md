@@ -5,6 +5,8 @@ Portfolio is a customizable website template designed to showcase your work, ski
 ## 🌐 Technologies
 
 - HTML and CSS
+- Git and Github
+- JS
 
 ## ✔️ Features
 
