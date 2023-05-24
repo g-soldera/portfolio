@@ -61,8 +61,7 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-text-fill-color: var(--contact-text-color);
-  -webkit-box-shadow: 0 0 0 50px rgba(0, 0, 0, 0.507) inset;
-  -webkit-backface-visibility: hidden;
+  transition: background-color 50000s ease-in-out 0s;
 }
 
 textarea,
