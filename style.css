@@ -51,11 +51,32 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.parallax {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%; /* Definindo altura mínima */
   background: #101728 var(--bg-url) no-repeat top center;
   background-size: cover;
-  transition: all 0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  z-index: -1;
+  transform: scale(1.2);
+  transform-origin: center top;
+  will-change: transform;
 }
 
 input:-webkit-autofill,
@@ -515,8 +536,8 @@ a {
 }
 
 @media (max-width: 768px) {
-  body {
-    background: #101728 var(--mobile-bg-url) no-repeat top center/cover;
+  parallax {
+    background: #101728 var(--mobile-bg-url) no-repeat top center;
   }
 
   nav .social-links,
