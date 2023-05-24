@@ -604,8 +604,7 @@ a {
     padding: 0.5em;
     border-radius: 0.4em;
     display: block;
-    margin-right: 10em;
-    margin-left: auto;
+    text-align: center;
     width: 96%;
     margin-top: -1em;
     margin-bottom: -0.5em;
