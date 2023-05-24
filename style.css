@@ -202,7 +202,7 @@ a {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid var(--border);
-  margin: 1.5vh 1.15vw 20px;
+  margin: 1.5em 1.15vw 20px;
 }
 
 .container section:hover {
@@ -246,7 +246,7 @@ a {
   border-radius: 1em;
   width: calc((100% / 2) - 2.3vw);
   background-color: var(--background);
-  margin: 6.3vh 1.15vw 20px;
+  margin: 3.2em 1.15vw 20px;
 }
 
 .container .main {
@@ -266,6 +266,11 @@ a {
   animation: 0.5s ease-out 1.5s 1 slideInFromLeft;
   visibility: hidden;
   animation-fill-mode: forwards;
+}
+
+.container #main .article {
+  height: 95%;
+  align-items: center;
 }
 
 .container #main img {
@@ -295,7 +300,7 @@ a {
   -webkit-backdrop-filter: blur(4px);
 }
 
-#profissional {
+#professional {
   margin-top: 6.5em;
 }
 
@@ -320,6 +325,13 @@ a {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 1em;
+}
+
+.container #professional .article .content {
+  display: block;
+  text-align: left;
+  margin-top: 0;
+  padding: 1em;
 }
 
 .container .banner-container {
@@ -555,6 +567,14 @@ a {
     width: 70vw;
     height: 50vw;
     margin: 0.6em auto 1em;
+  }
+
+  .container #professional .article .content {
+    display: block;
+    text-align: left;
+    margin-top: 1em;
+    margin-bottom: -1em;
+    padding: 1em;
   }
 
   .container .bannerdiv {
