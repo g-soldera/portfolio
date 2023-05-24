@@ -207,19 +207,19 @@ a {
 
 .container .sect1 {
   visibility: hidden;
-  animation: 1s ease-out 2s 1 slideInFromBottom;
+  animation: 0.5s ease-out 2.5s 1 slideInFromBottom;
   animation-fill-mode: forwards;
 }
 
 .container .sect2 {
   visibility: hidden;
-  animation: 1s ease-out 2.25s 1 slideInFromBottom;
+  animation: 0.5s ease-out 2.6s 1 slideInFromBottom;
   animation-fill-mode: forwards;
 }
 
 .container .sect3 {
   visibility: hidden;
-  animation: 1s ease-out 2.5s 1 slideInFromBottom;
+  animation: 0.5s ease-out 2.7s 1 slideInFromBottom;
   animation-fill-mode: forwards;
 }
 
@@ -246,7 +246,7 @@ a {
 
 .container .main {
   border: 1px solid var(--border);
-  animation: 1s ease-out 1s 1 slideInFromRight;
+  animation: 0.5s ease-out 2s 1 slideInFromRight;
   visibility: hidden;
   animation-fill-mode: forwards;
   opacity: 0.5;
@@ -257,7 +257,7 @@ a {
 }
 
 .container #main {
-  animation: 1s ease-out 0s 1 slideInFromLeft;
+  animation: 0.5s ease-out 1.5s 1 slideInFromLeft;
   visibility: hidden;
   animation-fill-mode: forwards;
 }
