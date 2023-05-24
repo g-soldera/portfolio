@@ -172,7 +172,7 @@ a {
 }
 
 .mobilelogo {
-  animation: 1s ease-out 0s 1 slideInFromTop;
+  animation: 0.5s ease-out 0s 1 slideInFromTop;
   animation-fill-mode: forwards;
   visibility: hidden;
   width: 100%;
