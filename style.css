@@ -58,7 +58,7 @@ body {
 
 .parallax {
   width: 100%;
-  min-height: 100%; /* Definindo altura mínima */
+  min-height: 100vh; /* Definindo altura mínima */
   background: #101728 var(--bg-url) no-repeat top center;
   background-size: cover;
   position: relative;
