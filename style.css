@@ -4,7 +4,7 @@
   --background-nav: rgba(255, 255, 255, 0.2);
   --background: rgba(255, 255, 255, 0.1);
   --background-active: rgba(255, 255, 255, 0.1);
-  --background-title: rgba(255, 255, 255, 0.4);
+  --background-title: rgba(255, 255, 255, 0.35);
   --backgroundhover: rgba(255, 255, 255, 0.2);
   --border: rgba(255, 255, 255, 0.5);
   --main-text-color: #f9f9f9;
@@ -25,7 +25,7 @@
   --background-nav: rgba(0, 0, 0, 0.2);
   --background: rgba(0, 0, 0, 0.1);
   --background-active: rgba(0, 0, 0, 0.1);
-  --background-title: rgba(0, 0, 0, 0.4);
+  --background-title: rgba(0, 0, 0, 0.35);
   --backgroundhover: rgba(0, 0, 0, 0.2);
   --border: rgba(0, 0, 0, 0.5);
   --main-text-color: #1f1e22;
@@ -60,7 +60,9 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: var(--contact-text-color);
+  -webkit-box-shadow: 0 0 0 50px rgba(0, 0, 0, 0.507) inset;
+  -webkit-backface-visibility: hidden;
 }
 
 textarea,
@@ -167,17 +169,15 @@ a {
   width: calc((100% / 3) - 2.3vw);
   background-color: var(--background);
   border: 1px solid var(--border);
-  margin: 3vh 1.15vw 20px;
+  margin: 1.5vh 1.15vw 20px;
 }
 
 .container section .title {
   width: 100%;
   border-top-left-radius: 0.6em;
   border-top-right-radius: 0.6em;
-  background-color: var(--background-title);
   padding: 1em;
   text-align: center;
-  border-bottom: 1px solid var(--border);
 }
 
 .container section .content {
@@ -190,11 +190,17 @@ a {
   border-radius: 1em;
   width: calc((100% / 2) - 2.3vw);
   background-color: var(--background);
-  margin: 6vh 1.15vw 20px;
+  margin: 6.3vh 1.15vw 20px;
 }
 
 .container .main {
   border: 1px solid var(--border);
+}
+
+.container #main img {
+  display: block;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 .container div .article {
@@ -282,6 +288,7 @@ a {
   width: 200%;
   margin-top: -1em;
   margin-bottom: -0.5em;
+  padding-bottom: -1em;
 }
 
 @media (min-width: 769px) {
