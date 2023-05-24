@@ -57,11 +57,13 @@ body {
   width: 100%;
   min-height: 100vh;
   background: #101728 var(--bg-url) no-repeat top center/cover;
+  backdrop-filter: blur(3px);
+  -backdrop-webkit-filter: blur(3px);
 }
 
 .parallax {
-  backdrop-filter: blur(3px);
-  -backdrop-webkit-filter: blur(3px);
+  backdrop-filter: blur(0px);
+  -backdrop-webkit-filter: blur(0px);
 }
 
 input:-webkit-autofill,
