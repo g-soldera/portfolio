@@ -184,6 +184,8 @@ a {
 
 .mobilelogo img {
   width: 80vw;
+  filter: invert(var(--logocolor));
+  -webkit-filter: invert(var(--logocolor));
 }
 
 .container {
