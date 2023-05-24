@@ -393,7 +393,7 @@ a {
 
 .contact-box {
   visibility: hidden;
-  animation: 0.5s ease-out 1.5s 1 slideInFromBottom;
+  animation: 0.5s ease-out 1.5s 1 Opacity;
   animation-fill-mode: forwards;
   display: block;
   margin: auto;
@@ -409,9 +409,6 @@ a {
 }
 
 .contact-box .sociallinks {
-  visibility: hidden;
-  animation: 0.7s ease 2.8s 1 slideInFromLeft;
-  animation-fill-mode: forwards;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -435,35 +432,35 @@ a {
 }
 
 .contact-box h2 {
-  visibility: hidden;
+  /* visibility: hidden;
   animation: 0.7s ease 1.8s 1 slideInFromTop;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
   font-weight: 580;
   text-align: center;
   margin-bottom: 20px;
 }
 
 .contact-box form {
-  visibility: hidden;
+  /* visibility: hidden;
   animation: 0.7s ease 1.9s 1 slideInFromBottom;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
   display: flex;
   flex-direction: column;
 }
 
 .contact-box label {
-  visibility: hidden;
-  animation: 0.7s ease 2s 1 slideInFromBottom;
-  animation-fill-mode: forwards;
+  /* visibility: hidden;
+  animation: 0.5s ease 2s 1 slideInFromBottom;
+  animation-fill-mode: forwards; */
   font-weight: 550;
   margin-bottom: 5px;
 }
 
 .contact-box input,
 .contact-box textarea {
-  visibility: hidden;
-  animation: 0.7s ease 2.1s 1 slideInFromBottom;
-  animation-fill-mode: forwards;
+  /* visibility: hidden;
+  animation: 0.5s ease 2.1s 1 slideInFromBottom;
+  animation-fill-mode: forwards; */
   max-width: 100%;
   min-width: 100%;
   font-size: 18px;
@@ -483,9 +480,6 @@ a {
 }
 
 .contact-box button {
-  visibility: hidden;
-  animation: 0.7s ease 2.2s 1 slideInFromBottom;
-  animation-fill-mode: forwards;
   max-width: 100%;
   min-width: 100%;
   padding: 10px 20px;
@@ -673,6 +667,17 @@ a {
   }
   100% {
     transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes Opacity {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
     visibility: visible;
     opacity: 1;
   }
