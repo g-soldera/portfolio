@@ -58,9 +58,9 @@ body {
 
 .parallax {
   width: 100%;
-  min-height: 100vh; /* Definindo altura mínima */
-  background: #101728 var(--bg-url) no-repeat top center;
-  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+  background: #101728 var(--bg-url) no-repeat top center/cover;
   position: relative;
   overflow: hidden;
 }
@@ -536,8 +536,8 @@ a {
 }
 
 @media (max-width: 768px) {
-  parallax {
-    background: #101728 var(--mobile-bg-url) no-repeat top center;
+  .parallax {
+    background: #101728 var(--mobile-bg-url) no-repeat top center/cover;
   }
 
   nav .social-links,
