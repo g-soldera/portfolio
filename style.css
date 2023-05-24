@@ -205,6 +205,11 @@ a {
   margin: 1.5vh 1.15vw 20px;
 }
 
+.container section:hover {
+  background-color: var(--backgroundhover);
+  scale: 1.02;
+}
+
 .container .sect1 {
   visibility: hidden;
   animation: 0.5s ease-out 2.5s 1 slideInFromBottom;
@@ -250,6 +255,7 @@ a {
   visibility: hidden;
   animation-fill-mode: forwards;
   opacity: 0.5;
+  border: 0;
 }
 
 .container .main:hover {
