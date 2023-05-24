@@ -532,7 +532,7 @@ a {
 }
 
 .contact-box button:hover {
-  background-color: var(--background-nav);
+  background-color: var(--backgroundhover);
 }
 
 @media (max-width: 768px) {
