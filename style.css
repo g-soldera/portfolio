@@ -28,7 +28,7 @@
   --background-nav: rgba(0, 0, 0, 0.2);
   --background: rgba(0, 0, 0, 0.1);
   --background-active: rgba(0, 0, 0, 0.1);
-  --background-title: rgba(0, 0, 0, 0.35);
+  --background-title: rgba(0, 0, 0, 0.15);
   --backgroundhover: rgba(0, 0, 0, 0.2);
   --border: rgba(0, 0, 0, 0.5);
   --main-text-color: #1f1e22;
@@ -53,9 +53,10 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  margin: 0;
-  padding: 0;
+  left: 0;
+  top: 0;
   overflow-x: hidden;
   width: 100%;
   min-height: 100vh;
@@ -595,7 +596,6 @@ a {
   .banner-container div {
     display: block;
     text-align: center;
-    auto: center;
     width: 100vw;
     margin-left: 0;
     margin-right: 0;
