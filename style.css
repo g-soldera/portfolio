@@ -109,13 +109,15 @@ nav .logo {
   animation-fill-mode: forwards;
   margin-right: auto;
   margin-left: 2em;
-  margin-top: 0.6em;
 }
 
 nav .logo img {
   width: 12em;
   filter: invert(var(--logocolor));
   -webkit-filter: invert(var(--logocolor));
+}
+nav .logo img:hover {
+  transform: scale(1.05);
 }
 
 nav .social-links {
@@ -215,7 +217,7 @@ a {
   background-color: var(--background);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border: 1px solid var(--border);
+  /* border: 1px solid var(--border); */
   margin: 1.5em 1.15vw 20px;
 }
 
@@ -431,7 +433,7 @@ a {
   margin: auto;
   margin-top: 3em;
   margin-bottom: 3em;
-  border: 1px solid var(--border);
+  /* border: 1px solid var(--border); */
   background-color: var(--background);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -500,7 +502,7 @@ a {
   background-color: var(--contact-bg);
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid var(--border);
+  /* border: 1px solid var(--border); */
   border-radius: 5px;
 }
 
