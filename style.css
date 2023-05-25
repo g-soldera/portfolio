@@ -96,6 +96,9 @@ input {
 }
 
 nav {
+  visibility: hidden;
+  animation: 1s ease 0s 1 Opacity;
+  animation-fill-mode: forwards;
   padding: auto;
   width: 100%;
   background-color: var(--background-nav);
