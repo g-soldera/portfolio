@@ -12,7 +12,7 @@
   --title-text-color: #f9f9f9;
   --contact-text-color: #f9f9f9;
   --contact-bg: rgba(255, 255, 255, 0.1);
-  --button-inactive: rgba(255, 255, 255, 0.5);
+  --button-active: rgba(255, 255, 255, 0.5);
   --scrollbarbg: rgba(255, 255, 255, 0.1);
   --scrollbarbar: rgba(255, 255, 255, 0.2);
   --scrollbarhover: rgba(255, 255, 255, 0.5);
@@ -35,7 +35,7 @@
   --title-text-color: #1f1e22;
   --contact-text-color: #1f1e22;
   --contact-bg: rgba(0, 0, 0, 0.1);
-  --button-inactive: rgba(0, 0, 0, 0.5);
+  --button-active: rgba(0, 0, 0, 0.5);
   --scrollbarbg: rgba(0, 0, 0, 0.1);
   --scrollbarbar: rgba(0, 0, 0, 0.2);
   --scrollbarhover: rgba(0, 0, 0, 0.5);
@@ -517,7 +517,7 @@ a {
   max-width: 100%;
   min-width: 100%;
   padding: 10px 20px;
-  background-color: var(--button-inactive);
+  background-color: var(--backgroundhover);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -525,7 +525,7 @@ a {
 }
 
 .contact-box button:hover {
-  background-color: var(--backgroundhover);
+  background-color: var(--button-active);
 }
 
 @media (max-width: 768px) {
