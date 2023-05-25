@@ -592,6 +592,15 @@ a {
     padding: 1em;
   }
 
+  .banner-container div {
+    display: block;
+    text-align: center;
+    auto: center;
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .container .bannerdiv {
     width: 96%;
     display: flex;
@@ -604,8 +613,6 @@ a {
     padding: 0.5em;
     border-radius: 0.4em;
     display: block;
-    margin-right: 10em;
-    margin-left: auto;
     width: 96%;
     margin-top: -1em;
     margin-bottom: -0.5em;
