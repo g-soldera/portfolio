@@ -375,6 +375,12 @@ a {
   animation-fill-mode: forwards;
 }
 
+.container .banner-container .banner3 {
+  visibility: hidden;
+  animation: 0.7s ease-out 2.5s 1 slideInFromBottom;
+  animation-fill-mode: forwards;
+}
+
 .container .bannerdiv {
   margin-top: 6em;
   border-radius: 1em;
