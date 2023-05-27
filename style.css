@@ -542,7 +542,7 @@ a {
 
 @media (max-width: 768px) {
   body {
-    background: #101728 var(--mobile-bg-url) no-repeat top center/cover;
+    background: #101728 var(--mobile-bg-url) no-repeat top center/cover fixed;
     backdrop-filter: blur(var(--blur-bg));
     -backdrop-webkit-filter: blur(var(--blur-bg));
   }
